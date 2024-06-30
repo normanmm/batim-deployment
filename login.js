@@ -3,7 +3,7 @@ document.getElementById('login-form').addEventListener('submit', async function(
 
   const personalId = document.getElementById('personalId-input').value;
 
-  const response = await fetch('/login', {
+  const response = await fetch('127.0.0.1:3000/login', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
